@@ -50,6 +50,7 @@ public class Task2_ODC {
         Shapes.add(R1);
         for (int i =0 ; i<=Shapes.size()-1;i++){
             Shapes.get(i).Draw();
+            System.out.println("====================================================================================");
             
         }
         System.out.println("The sum of Three Areas = " + sumAreas(T1, c1, R1));
