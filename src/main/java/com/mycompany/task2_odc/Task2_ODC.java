@@ -3,6 +3,7 @@
  */
 package com.mycompany.task2_odc;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -43,6 +44,11 @@ public class Task2_ODC {
         R1.Draw();
         System.out.println("The Area of the R1 = " + R1.getArea());
         System.out.println("====================================================================================");
+        ArrayList<Shape> Shapes = null;
+        Shapes.add(T1);
+        Shapes.add(c1);
+        Shapes.add(R1);
+        
         System.out.println("The sum of Three Areas = " + sumAreas(T1, c1, R1));
     }
 }
