@@ -44,11 +44,14 @@ public class Task2_ODC {
         R1.Draw();
         System.out.println("The Area of the R1 = " + R1.getArea());
         System.out.println("====================================================================================");
-        ArrayList<Shape> Shapes = null;
+        ArrayList<Shape> Shapes = new ArrayList<Shape>(3);
         Shapes.add(T1);
         Shapes.add(c1);
         Shapes.add(R1);
-        
+        for (int i =0 ; i<=Shapes.size()-1;i++){
+            Shapes.get(i).Draw();
+            
+        }
         System.out.println("The sum of Three Areas = " + sumAreas(T1, c1, R1));
     }
 }
